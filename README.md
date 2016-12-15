@@ -1,9 +1,13 @@
 
 # README.md
 
-[Egghead.io](https://egghead.io/courses)
-
-[Start Using React to Build Web Applications](https://egghead.io/courses/react-fundamentals)
+## Links and My React Apps
+- [Egghead.io](https://egghead.io/courses)
+- Course: [Start Using React to Build Web Applications](https://egghead.io/courses/react-fundamentals)
+- coolinmc6's React Repos:
+  - Facebook's React Tutorial: [Tic-Tac-Toe](https://github.com/coolinmc6/react-tic-toe)
+  - [Hello Dos](https://github.com/coolinmc6/react-hello-dos) (second hello world-type app)
+  - [Hello World](https://github.com/coolinmc6/react-hello-world)
 
 ## Setup
 - Here are some of the commands to know, most importantly are the create-react-app and npm start.
