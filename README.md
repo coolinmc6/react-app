@@ -103,7 +103,7 @@ changed it to props.stuff from props.update because I confused it with the updat
   5. App.js import the React library and makes the initial declaration of the component, extending
   the class React.Component
   6. A simple component could just be a render() method which holds one element, which is either
-  literally one element (e.g. <h1>Hello World!</h1>) or is a parent element (div) that can have 
+  literally one element (e.g. &lt;h1&gt;Hello World!&lt;/h1&gt;) or is a parent element (div) that can have 
   multiple children and so on
   7. For our App component, if we'd like to use state, we must create the constructor() method and
   call super()
@@ -116,7 +116,7 @@ changed it to props.stuff from props.update because I confused it with the updat
   12. To alter state, we must use setState({key: value}) where key is what we are trying to change (e.g. 'txt')
   and value is whatever we are changing it to...in our example thus far, we are changing it to the text of the
   input bar
-  
+
 
 
 
