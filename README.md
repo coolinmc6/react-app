@@ -90,7 +90,7 @@ constructor(){
 changed it to props.stuff from props.update because I confused it with the update() method in App)
   - the point is, you are setting the name of 'stuff', it can be anything, I just need to appropriately 
   set its value in the App component to grab the appropriate state value I want
-  - As a brief reminder, the <h1> is set to state.txt so every time state.txt is updated, it changes
+  - As a brief reminder, the &lt;h1&gt; is set to state.txt so every time state.txt is updated, it changes
   - state.txt is updated every time there is a change and indicated by 'onChange' in the Widget component
   - the value that state.txt is changed to is simply the value of the input field which is what the
   update() method in the App component does
