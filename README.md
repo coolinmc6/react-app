@@ -5,8 +5,8 @@
 - [Egghead.io](https://egghead.io/courses)
 - Course: [Start Using React to Build Web Applications](https://egghead.io/courses/react-fundamentals)
 - coolinmc6's React Repos:
-  - Facebook's React Tutorial: [Tic-Tac-Toe](https://github.com/coolinmc6/react-tic-toe)
-  - [Hello Dos](https://github.com/coolinmc6/react-hello-dos) (second hello world-type app)
+  - Facebook's React Tutorial: [Tic-Tac-Toe](https://github.com/coolinmc6/react-tic-toe) (incomplete)
+  - [Hello Dos](https://github.com/coolinmc6/react-hello-dos) (second 'Hello World!'-type app)
   - [Hello World](https://github.com/coolinmc6/react-hello-world)
 
 ## Setup
@@ -121,6 +121,27 @@ changed it to props.stuff from props.update because I confused it with the updat
   and value is whatever we are changing it to...in our example thus far, we are changing it to the text of the
   input bar
 
+### Video 7
+- Look at this code:
+```javascript
+class App extends React.Component {
+  render(){
+    return <Button>I <Heart /> React</Button>
+  }
+}
+// {props.children}
+const Button = (props) => <button>{props.children}</button>
+
+class Heart extends React.Component {
+  render() {
+    return <span>&hearts;</span>
+  }
+}
+```
+
+- the button is only populated with 'I &hearts; React' because of the {props.children} in the Button 
+component.  If I removed that, nothing would populate.
+  - Egghead: this.props.children accesses the innerHTML or nested components of another component.
 
 
 

@@ -1,39 +1,51 @@
+// import React from 'react'
+
+// class App extends React.Component {
+//   constructor(){
+//     super();
+//     this.state = {
+//       txt: 'this is the state txt'
+//     }
+//   }
+//   // custom method on our component
+//   update( e ) {
+//     this.setState({txt: e.target.value})
+//   }
+//   render() {
+//     return (
+//       <div>
+//         <h1>{this.state.txt}</h1>
+//         <Widget stuff={this.update.bind(this)} />
+
+        
+//       </div>
+//     )
+//   }
+// }
+
+// const Widget = (props) =>
+//   <input type="text" onChange={props.stuff}/>
+
+// export default App
+
+
 import React from 'react'
 
 class App extends React.Component {
-  constructor(){
-    super();
-    this.state = {
-      txt: 'this is the state txt'
-    }
+  render(){
+    return <Button>I <Heart /> React</Button>
   }
-  // custom method on our component
-  update( e ) {
-    this.setState({txt: e.target.value})
-  }
-  render() {
-    return (
-      <div>
-        <h1>{this.state.txt}</h1>
-        <Widget stuff={this.update.bind(this)} />
+}
+// {props.children}
+const Button = (props) => <button>{props.children}</button>
 
-        
-      </div>
-    )
+class Heart extends React.Component {
+  render() {
+    return <span>&hearts;</span>
   }
 }
 
-const Widget = (props) =>
-  <input type="text" onChange={props.stuff}/>
-
 export default App
-
-
-
-
-
-
-
 
 
 
