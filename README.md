@@ -21,6 +21,9 @@ npm start						# starts dev server
 
 ## Lookup Later
 - javascript .bind() examples
+- [NPM docs](https://docs.npmjs.com/cli/install) => how to install dependencies for this
+repo.
+  - npm i -S -D
 
 ## Notes
 
@@ -143,11 +146,272 @@ class Heart extends React.Component {
 component.  If I removed that, nothing would populate.
   - Egghead: this.props.children accesses the innerHTML or nested components of another component.
 
+### Video 8
+- An error is displayed in the console if text is less than 6 characters.
+```javascript
+const Title = (props) => <h1>Title: {props.text}</h1>
 
+Title.propTypes = {
+  text(props, propName, component){
+    if(!(propName in props)){
+      return new Error(`missing ${propName}`)
+    }
+    if(props[propName].length < 6){
+      return new Error(`{propName} was too short!`)
+    }
+  }
+}
+```
 
+### Video 9: Normalize Events with React's Synthetic Event System
+- These are the events
+- Walk through of onCut:
+  - you select some text in the textarea element and cut
+  - in the constructor(), this.update = this.update.bind(this) so this.update is
+  grabbing whatever the event is
+  - the event is the argument that is passed in the state is updated for currentEvent
 
+```javascript
+class App extends React.Component {
+  constructor(){
+    super();
+    this.state = {currentEvent: '-- no event selected --'}
+    this.update = this.update.bind(this)
+  }
 
+  update(event){
+    this.setState({currentEvent: event.type})
+  }
+  render(){
+    return (
+      <div>
+        <textarea 
+          cols="30" 
+          rows="10"
+          onKeyPress={this.update}
+          onCopy={this.update}
+          onCut={this.update}
+          onPaste={this.update}
+          onFocus={this.update}
+          onBlur={this.update}
+          onDoubleClick={this.update}
+          onTouchStart={this.update}
+          onTouchMove={this.update}
+          onTouchEnd={this.update}
+           />
+         <h1>{this.state.currentEvent}</h1>
+        </div>
+      )
+  }
+}
+```
+### Video 10: Use React ref to Get a Reference to Specific
 
+- I have no idea what I was supposed to learn there...but I do need to learn more about
+refs.
+
+### Video 11: Understand the React Component Lifecycle Methods
+
+- when our component is added to the DOM it's called mounting, removed = unmounting
+- Mount and unmount
+
+### Video 12: Manage React Component State with Lifecycle
+```javascript
+class App extends React.Component {
+  constructor(){
+    super();
+    this.state = { val: 0}
+    this.update = this.update.bind(this)
+  }
+  update() {
+    this.setState({val: this.state.val + 1})
+  }
+  componentWillMount(){
+    console.log('componentWillMount');
+    this.setState({m: 2})
+  }
+
+  render() {
+    console.log('render');
+    return <button onClick={this.update}>
+      {this.state.val * this.state.m}
+    </button>
+  }
+  componentDidMount(){
+    console.log('componentDidMount');
+    console.log(ReactDOM.findDOMNode(this))
+    this.inc = setInterval(this.update,500)
+  }
+  componentWillUnmount(){
+    console.log('componentWillUnmount')
+    clearInterval(this.inc)
+  }
+}
+```
+
+- this is after videos 11 and 12
+
+### Video 13: Control React Component Updates when New Props
+- I don't quite understand what the methods do...I can see it but I don't quite
+understand why I'd use it.
+  - componentWillReceiveProps(nextProps){}
+  - shouldComponentUpdate(nextProps, nextState){}
+  - componentDidUpdate(prevProps, prevState){}
+
+```javascript
+class App extends React.Component {
+  constructor(){
+    super();
+    this.state = {increasing: false}
+  }
+  update() {
+    ReactDOM.render(
+      <App val={this.props.val+1} />, document.getElementById('root')
+      )
+  }
+  componentWillReceiveProps(nextProps){
+    this.setState({increasing: nextProps.val > this.props.val})
+  }
+  shouldComponentUpdate(nextProps, nextState){
+    return nextProps.val % 5 === 0;
+  }
+
+  render() {
+    console.log(this.state.increasing);
+    return <button onClick={this.update.bind(this)}>
+      {this.props.val}
+    </button>
+  }
+  componentDidUpdate(prevProps, prevState){
+    console.log(`prevProps: ${prevProps.val}`)
+  }
+
+}
+```
+### Video 14: Use map to Create React Components from Arrays
+- Pretty cool example...
+```javascript
+import React from 'react';
+// import ReactDOM from 'react-dom';
+
+class App extends React.Component {
+  constructor(){
+    super();
+    this.state = {items: []}
+  }
+  componentWillMount(){
+    fetch('http://swapi.co/api/people/?=format=json')
+      .then( response => response.json() )
+      .then( ({results: items}) => this.setState({items}))
+  }
+
+  filter(e){
+    this.setState({filter: e.target.value})
+  }
+
+  render() {
+    let items = this.state.items;
+    if(this.state.filter){
+      items = items.filter( item =>
+        item.name.toLowerCase()
+          .includes(this.state.filter.toLowerCase()))
+    }
+    return (
+    <div>
+      <input type="text" onChange={this.filter.bind(this)} />
+      {items.map(item => 
+        // <h4 key={item.name}>{item.name}</h4>)}
+       <Person key={item.name }person={item} /> )}
+    </div>
+    );
+  }
+
+}
+
+const Person = (props) => <h4>{props.person.name}</h4>
+```
+
+### Video 15: Compose React Component Behavior with Higher Order Components
+- I think this will be important for me later...
+```javascript
+import React from 'react';
+// import ReactDOM from 'react-dom';
+  
+  const HOC = (InnerComponent  ) => class extends React.Component {
+    constructor(){
+      super();
+      this.state = {count: 0}
+    }
+    update(){
+      this.setState({count: this.state.count + 1})
+    }
+    componentWillMount(){
+      console.log('will mount')
+    }
+    render(){
+      return (
+        <InnerComponent 
+          {...this.props}
+          {...this.state}
+          update={this.update.bind(this)}
+        />
+      )
+    }
+  }
+
+class App extends React.Component {
+
+  render() {    
+    return (
+    <div>
+      <Button>button</Button>
+      <hr />
+      <LabelHOC>label</LabelHOC>
+    </div>
+    )
+  }
+
+}
+
+const Button = HOC((props) => 
+  <button onClick={props.update}>{props.children} - {props.count}</button>)
+
+class Label extends React.Component {
+  componentWillMount(){
+    console.log('Label will mount')
+  }
+  render(){
+    return (
+        <label onMouseMove={this.props.update}>
+          {this.props.children} - {this.props.count}
+        </label>
+    )
+  }
+}
+
+const LabelHOC = HOC(Label)
+
+export default App
+```
+
+### Video 16: Build a JSX Live Compiler as a React Component
+- pretty neat little exercise that I will probably not ever need but it'd probably be good 
+to do at least once
+
+### Video 17: Understand JSX at a Deeper Level
+- this video we play with the live compiler that we created in the last video
+- I should go through this again
+
+### Video 18: Understand React.Children Utilities
+- 
+- 
+
+### Video 19: Use React.cloneElement to Extend Functionality of
+
+### Video 20: Write More Reusable React Components with Composable
+
+### Video 21: Debug React Components with Developer Tools in Chrome
+- 
 
 
 
