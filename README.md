@@ -1,13 +1,24 @@
 
 # README.md
 
-## Links and My React Apps
+## My React Apps
+[coolinmc6](https://github.com/coolinmc6)'s React Repos:
+  1. Facebook's React Tutorial: [Tic-Tac-Toe](https://github.com/coolinmc6/react-tic-toe) (incomplete)
+  2. Second 'Hello World!'-type app: [Hello Dos](https://github.com/coolinmc6/react-hello-dos) (incomplete)
+  3. Another Intro: [Hello World](https://github.com/coolinmc6/react-hello-world)
+  4. Udemy Blog App: [React Blog](https://github.com/coolinmc6/react_blog) (incomplete)
+  5. Udmey Weather App: [Weather App](https://github.com/coolinmc6/redux-middleware) -> API key not included
+  6. Udemy Booklist: [React-Redux](https://github.com/coolinmc6/book_list)
+    i. first React-Redux app
+  7. Reactco Tutorial: [Reactco Tutorial](https://github.com/coolinmc6/reactco-tutorial) (incomplete)
+  8. Tutspoint Tutorial: [React Tutspoint](https://github.com/coolinmc6/react-tutspoint) (incomplete)
+  9. CM React Starter: [React Starter](https://github.com/coolinmc6/cm-react-starter) (probably don't need)
+  10. Redux Tutorial: [Egghead.io Redux Tutorial](https://github.com/coolinmc6/redux) (incomplete)
+
+## Links
 - [Egghead.io](https://egghead.io/courses)
 - Course: [Start Using React to Build Web Applications](https://egghead.io/courses/react-fundamentals)
-- coolinmc6's React Repos:
-  - Facebook's React Tutorial: [Tic-Tac-Toe](https://github.com/coolinmc6/react-tic-toe) (incomplete)
-  - [Hello Dos](https://github.com/coolinmc6/react-hello-dos) (second 'Hello World!'-type app)
-  - [Hello World](https://github.com/coolinmc6/react-hello-world)
+
 
 ## Setup
 - Here are some of the commands to know, most importantly are the create-react-app and npm start.
