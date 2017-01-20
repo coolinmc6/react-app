@@ -1,5 +1,4 @@
-
-# README.md
+# README
 
 ## My React Apps
 [coolinmc6](https://github.com/coolinmc6)'s React Repos:
@@ -9,7 +8,8 @@
   4. Udemy Blog App: [React Blog](https://github.com/coolinmc6/react_blog) (incomplete)
   5. Udmey Weather App: [Weather App](https://github.com/coolinmc6/redux-middleware) -> API key not included
   6. Udemy Booklist: [React-Redux](https://github.com/coolinmc6/book_list)
-    i. first React-Redux app
+    
+    1. first React-Redux app
   7. Reactco Tutorial: [Reactco Tutorial](https://github.com/coolinmc6/reactco-tutorial) (incomplete)
   8. Tutspoint Tutorial: [React Tutspoint](https://github.com/coolinmc6/react-tutspoint) (incomplete)
   9. CM React Starter: [React Starter](https://github.com/coolinmc6/cm-react-starter) (probably don't need)
