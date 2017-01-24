@@ -9,7 +9,9 @@
 
 3. Another Intro: [Hello World](https://github.com/coolinmc6/react-hello-world)
 
-4. Udemy Blog App: [React Blog](https://github.com/coolinmc6/react_blog) (incomplete)
+4. Udemy YouTube App: [Video Browser](https://github.com/coolinmc6/video_browser)
+
+4. Udemy Blog App: [React Blog](https://github.com/coolinmc6/react_blog)
 
 5. Udmey Weather App: [Weather App](https://github.com/coolinmc6/redux-middleware) -> API key not included
 
