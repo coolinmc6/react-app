@@ -27,6 +27,8 @@
 
 1. Redux Tutorial: [Egghead.io Redux Tutorial](https://github.com/coolinmc6/redux) (incomplete)
 
+1. Scotch.io Intro Tutorial: [Scotch Intro](https://github.com/coolinmc6/scotch-intro) (incomplete)
+
 
 
 ## Links
