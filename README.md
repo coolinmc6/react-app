@@ -27,7 +27,12 @@
 
 1. Redux Tutorial: [Egghead.io Redux Tutorial](https://github.com/coolinmc6/redux) (incomplete)
 
-1. Scotch.io Intro Tutorial: [Scotch Intro](https://github.com/coolinmc6/scotch-intro) (incomplete)
+1. Scotch.io Intro Tutorial: [Scotch Intro](https://github.com/coolinmc6/scotch-intro)
+
+1. Scotch.io Intro CM Version: [Scotch Intro CM Version](https://github.com/coolinmc6/scotch-intro-CM)
+  - same as above but more ES6 syntax, some styling, and largely on my own
+
+
 
 
 
