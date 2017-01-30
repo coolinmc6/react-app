@@ -5,9 +5,9 @@
 
 1. This repo: [React App](https://github.com/coolinmc6/react-app)
 
-1. Facebook's React Tutorial: [Tic-Tac-Toe](https://github.com/coolinmc6/react-tic-toe) (incomplete)
+1. Facebook's React Tutorial: [Tic-Tac-Toe](https://github.com/coolinmc6/react-tic-toe)
 
-1. Second 'Hello World!'-type app: [Hello Dos](https://github.com/coolinmc6/react-hello-dos) (incomplete)
+1. Second 'Hello World!'-type app: [Hello Dos](https://github.com/coolinmc6/react-hello-dos) (don't finish)
 
 1. Another Intro: [Hello World](https://github.com/coolinmc6/react-hello-world)
 
@@ -21,13 +21,24 @@
 
 1. Reactco Tutorial: [Reactco Tutorial](https://github.com/coolinmc6/reactco-tutorial) (incomplete)
 
-1. Tutspoint Tutorial: [React Tutspoint](https://github.com/coolinmc6/react-tutspoint) (incomplete)
+1. Tutspoint Tutorial: [React Tutspoint](https://github.com/coolinmc6/react-tutspoint)
 
 1. CM React Starter: [React Starter](https://github.com/coolinmc6/cm-react-starter) (probably don't need)
 
 1. Redux Tutorial: [Egghead.io Redux Tutorial](https://github.com/coolinmc6/redux) (incomplete)
 
-1. Scotch.io Intro Tutorial: [Scotch Intro](https://github.com/coolinmc6/scotch-intro) (incomplete)
+1. Scotch.io Intro Tutorial: [Scotch Intro](https://github.com/coolinmc6/scotch-intro)
+
+## Next Steps
+
+- get notes from my completed apps:
+  - what are the things that I need to know how to do for a basic React app?
+  - get some notes on all the basic concepts
+  - Identify the major complementary libraries I should know: Redux, React Router, Axios, etc.
+  - Finish Redux Tutorial and take notes
+  - Build an app using Redux, React Router, Axios
+  - Do Advanced Redux course
+
 
 
 
