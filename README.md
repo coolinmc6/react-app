@@ -29,6 +29,9 @@
 
 1. Scotch.io Intro Tutorial: [Scotch Intro](https://github.com/coolinmc6/scotch-intro)
 
+1. Scotch.io Intro CM Version: [Scotch Intro CM Version](https://github.com/coolinmc6/scotch-intro-CM)
+  - same as above but more ES6 syntax, some styling, and largely on my own
+
 ## Next Steps
 
 - get notes from my completed apps:
@@ -38,9 +41,6 @@
   - Finish Redux Tutorial and take notes
   - Build an app using Redux, React Router, Axios
   - Do Advanced Redux course
-
-
-
 
 ## Links
 - [Egghead.io](https://egghead.io/courses)
