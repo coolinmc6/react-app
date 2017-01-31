@@ -32,6 +32,8 @@
 1. Scotch.io Intro CM Version: [Scotch Intro CM Version](https://github.com/coolinmc6/scotch-intro-CM)
   - same as above but more ES6 syntax, some styling, and largely on my own
 
+1. Egghead.io's [Production Quality ToDo](https://github.com/coolinmc6/egghead-todo) (incomplete)
+
 ## Next Steps
 
 - get notes from my completed apps:
