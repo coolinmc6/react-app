@@ -7,8 +7,6 @@
 
 1. Facebook's React Tutorial: [Tic-Tac-Toe](https://github.com/coolinmc6/react-tic-toe)
 
-1. Second 'Hello World!'-type app: [Hello Dos](https://github.com/coolinmc6/react-hello-dos) (don't finish)
-
 1. Another Intro: [Hello World](https://github.com/coolinmc6/react-hello-world)
 
 1. Udemy YouTube App: [Video Browser](https://github.com/coolinmc6/video_browser)
