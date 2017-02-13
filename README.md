@@ -32,7 +32,12 @@
 1. Scotch.io Intro CM Version: [Scotch Intro CM Version](https://github.com/coolinmc6/scotch-intro-CM)
   - same as above but more ES6 syntax, some styling, and largely on my own
 
-1. Egghead.io's [Production Quality ToDo](https://github.com/coolinmc6/egghead-todo) (incomplete)
+1. Egghead.io's [Production Quality ToDo](https://github.com/coolinmc6/egghead-todo)
+
+1. Colin's [Workout App](https://github.com/coolinmc6/workout-app)
+  - one of my first real attempts at building an app, from the ground up, on my own
+  - I did rely heavily on past projects but I tried as best as I could to 'derive' the solution rather
+  than just implement it using other people's code (although there is some of that)
 
 ## Next Steps
 
