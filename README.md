@@ -37,6 +37,25 @@
   - I did rely heavily on past projects but I tried as best as I could to 'derive' the solution rather
   than just implement it using other people's code (although there is some of that)
 
+1. Colin's [Book List](https://github.com/coolinmc6/book_list_CM)
+  - redo of the Udemy app with more in-depth notes
+  - This has a very heavy discussion on Redux including building action creators, building reducers, 
+  the general set-up, connecting action creators to reducers, calling action creators, etc.
+  - There is also a good bit of notes on deploying to GitHub
+  - Check it out [here](https://coolinmc6.github.io/book_list_CM/)
+
+
+1. Colin's [Redux Counter](https://github.com/coolinmc6/counter-redux-CM)
+  - this is my first Redux app without using any help from tutorials, etc.  I am largely using just
+  my notes.  It just counts up and down but was a great intro app to the flow of Redux.
+  - Check it out [here](https://coolinmc6.github.io/counter-redux-CM/)
+
+1. Colin's [Weather App](https://github.com/coolinmc6/weather-app-CM)
+  - some good notes on Redux-Promise (although not much) and a more thorough write-up of the flow
+  through Action-Reducer-Container. 
+  - There are also some good notes on map and filter
+  
+
 ## Next Steps
 
 - get notes from my completed apps:
